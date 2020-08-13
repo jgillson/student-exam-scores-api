@@ -1,0 +1,15 @@
+<%- include('./includes/head.ejs') %>
+</head>
+
+<body>
+    <main>
+        <h1><%= pageTitle %></h1>
+        <p>REST APIs (GET):</p>
+        <p><b>/students</b> - lists all users that have received at least one test score</p>
+        <p><b>/students/{id}</b> - lists the test results for the specified student, and provides the student's average score across all exams</p>
+        <p><b>/exams</b> - lists all the exams that have been recorded</p>
+        <p><b>/exams/{number}</b> - lists all the results for the specified exam, and provides the average score across all students</p>
+    </main>
+</body>
+
+<%- include('./includes/end.ejs') %>

@@ -1,0 +1,33 @@
+{
+  "name": "student-scores-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "DEBUG=true nyc mocha ./tests/**/*.test.js --exit --inspect=0.0.0.0:9229 --timeout 120000",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgillson/student-scores-api.git"
+  },
+  "author": "John Gillson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jgillson/student-scores-api/issues"
+  },
+  "homepage": "https://github.com/jgillson/student-scores-api#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.4",
+    "nyc": "^15.1.0",
+    "sinon": "^9.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "eventsource": "^1.0.7",
+    "express": "^4.17.1"
+  }
+}
